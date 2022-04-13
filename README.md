@@ -12,5 +12,6 @@ library from PyPi using `pip install h2o_authn`.
 
 ## Available Examples
 
-* [Manage and Access AI Engines](/Enterprise%20Steam.ipynb) - Get started with Enterprise Steam for managing and creating AI Engines to then build your own models.
+* [Driverless AI](/Driverless%20AI.ipynb) - Get started with **Driverless AI** for access to Automated Machine Learning.
+* [Enterprise Steam](/Enterprise%20Steam.ipynb) - Get started with **Enterprise Steam** for managing and creating AI Engines to then build your own models.
 * [App Store](/app_store.ipynb) - Get started interacting with the H2O App Store from your local machine including how to manage your Apps and App Instances programatically.
