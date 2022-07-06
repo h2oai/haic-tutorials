@@ -12,7 +12,7 @@ H2O_CLOUD_URL = "cloud.h2o.ai"
 # Information available at https://H2O_CLOUD_URL/cli-and-api-access
 TOKEN_ENDPOINT = "https://auth.cloud.h2o.ai/auth/realms/hac/protocol/openid-connect/token"
 API_CLIENT_ID = "hac-platform-public"
-
+REFRESH_TOKEN_URL = "https://cloud.h2o.ai/auth/get-platform-token"
 
 
 def token_provider():
@@ -23,7 +23,6 @@ def token_provider():
         clicking on your name from the H2O AI Cloud UI.
     """
     
-    REFRESH_TOKEN_URL = "https://" + H2O_CLOUD_URL + "/auth/get-platform-token"
     print(f"Visit {REFRESH_TOKEN_URL} to get your platform token")
 
     return h2o_authn.TokenProvider(
