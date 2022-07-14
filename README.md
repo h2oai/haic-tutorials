@@ -8,7 +8,7 @@ These tutorials were explictly tested last in H2O AI Cloud v22.07.0 and python 3
 
 ```bash
 pip install h2o_authn==0.1.1
-pip install https://docs.h2o.ai/enterprise-steam/latest-stable/python/h2osteam-1.8.12-py2.py3-none-any.whl
+pip install https://enterprise-steam.s3.amazonaws.com/release/1.8.12/python/h2osteam-1.8.12-py2.py3-none-any.whl
 pip install https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/mlops/rel-0.56.1/2/h2o_mlops_client-0.56.1%2Bdd66f93.rel0.56.1.2-py2.py3-none-any.whl
 pip install https://h2o-release.s3.amazonaws.com/h2o/rel-zumbo/2/Python/h2o-3.36.1.2-py2.py3-none-any.whl
 
