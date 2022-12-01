@@ -6,13 +6,13 @@ import h2osteam
 
 
 # The URL you use to access the H2O AI Cloud's UI - do not include the `https://` - ex: cloud.h2o.ai
-H2O_CLOUD_URL = "cloud.h2o.ai"
+H2O_CLOUD_URL = "cloud-dev.h2o.ai"
 
 
 # Information available at https://H2O_CLOUD_URL/cli-and-api-access
-TOKEN_ENDPOINT = "https://auth.cloud.h2o.ai/auth/realms/hac/protocol/openid-connect/token"
+TOKEN_ENDPOINT = "https://auth.cloud-dev.h2o.ai/auth/realms/hac-dev/protocol/openid-connect/token"
 API_CLIENT_ID = "hac-platform-public"
-REFRESH_TOKEN_URL = "https://cloud.h2o.ai/auth/get-platform-token"
+REFRESH_TOKEN_URL = "https://cloud-dev.h2o.ai/auth/get-platform-token"
 
 
 def token_provider():
