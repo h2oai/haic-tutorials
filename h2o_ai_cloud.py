@@ -1,8 +1,10 @@
+import os
 import getpass
 
 import h2o_authn
 import h2o_mlops_client
 import h2osteam
+import h2o_discovery
 import featurestore
 
 
@@ -58,15 +60,14 @@ def steam_client():
     )
 
 
-def fs_client(token_provider):
+def fs_client():
     """
     Connect to Feature Store
     """
-    FS_API = "https://featurestore." + H2O_CLOUD_URL
-
+    discovery = h2o_discovery.discover(os.environ['H2O_CLOUD_ENVIRONMENT'])
     client = featurestore.Client(
-        url=FS_API,
+        url=discovery.services['feature-store-grpc-api'].uri,
         secure=True
     )
-    return client.auth.set_obtain_access_token_method(token_provider())
+    return client
 
