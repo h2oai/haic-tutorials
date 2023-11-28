@@ -4,7 +4,7 @@ This repo provides code examples and tutorials demonstrating how to use the H2O 
 
 ## Running Locally
 
-These tutorials were explictly tested last in H2O AI Cloud v22.07.0 and python 3.7+ with the following, specific library versions:
+These tutorials were explicitly tested last in H2O AI Cloud v22.07.0 and python 3.7+ with the following specific library versions:
 
 ```bash
 pip install h2o_authn==0.1.1
@@ -15,9 +15,9 @@ pip install https://h2o-release.s3.amazonaws.com/h2o/rel-zumbo/2/Python/h2o-3.36
 ```
 ### Setup your connection
 
-Update the `h2o_ai_cloud.py` file with the connection parameters for your H2O AI Cloud environemnt:
+Update the `h2o_ai_cloud.py` file with the connection parameters for your H2O AI Cloud environment:
 
-1. Login to your H2O AI Cloud environment
+1. Log in to your H2O AI Cloud environment
 1. Click your username or avatar in the H2O AI Cloud navigation bar
 1. Navigate to `CLI & API Access`
 1. Use the variables from the `Accessing H2O AI Cloud APIs` section to populate the parameters
@@ -31,7 +31,7 @@ Update the `h2o_ai_cloud.py` file with the connection parameters for your H2O AI
 * Steam python documentation: https://docs.h2o.ai/enterprise-steam/latest-stable/docs/python-docs/index.html
 * Driverless AI product documentation: https://docs.h2o.ai/driverless-ai/1-10-lts/docs/userguide/index.html
 * Driverless AI python documentation: https://docs.h2o.ai/driverless-ai/pyclient/docs/html/index.html
-* Driverelss AI additional examples: https://github.com/h2oai/driverlessai-tutorials/tree/master/dai_python_client
+* Driverless AI additional examples: https://github.com/h2oai/driverlessai-tutorials/tree/master/dai_python_client
 * H2O-3 product documentation: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/index.html
 * H2O-3 python documentation: https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/index.html
 * H2O-3 additional tutorials: https://github.com/h2oai/h2o-tutorials
