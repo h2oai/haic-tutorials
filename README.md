@@ -11,6 +11,7 @@ pip install h2o_authn==0.1.1
 pip install https://enterprise-steam.s3.amazonaws.com/release/1.8.12/python/h2osteam-1.8.12-py2.py3-none-any.whl
 pip install https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/mlops/rel-0.56.1/2/h2o_mlops_client-0.56.1%2Bdd66f93.rel0.56.1.2-py2.py3-none-any.whl
 pip install https://h2o-release.s3.amazonaws.com/h2o/rel-zumbo/2/Python/h2o-3.36.1.2-py2.py3-none-any.whl
+pip install pyspark==3.2.1 h2o-featurestore==0.14.4
 
 ```
 ### Setup your connection
@@ -37,4 +38,5 @@ Update the `h2o_ai_cloud.py` file with the connection parameters for your H2O AI
 * H2O-3 additional tutorials: https://github.com/h2oai/h2o-tutorials
 * MLOps product documentation: https://docs.h2o.ai/mlops/
 * MLOps python documentation: https://docs.h2o.ai/mlops/py-client-installing/
+* Feature Store product documentation: https://docs.h2o.ai/feature-store/latest-stable/docs/index.html
 

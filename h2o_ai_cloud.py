@@ -1,8 +1,11 @@
+import os
 import getpass
 
 import h2o_authn
 import h2o_mlops_client
 import h2osteam
+import h2o_discovery
+import featurestore
 
 
 # The URL you use to access the H2O AI Cloud's UI - do not include the `https://` - ex: cloud.h2o.ai
@@ -44,7 +47,6 @@ def mlops_client():
     )
 
 
-
 def steam_client():
     """
     Connect to Enterprise Steam, Driverless AI, and H2O-3
@@ -57,4 +59,15 @@ def steam_client():
         access_token=tp()
     )
 
+
+def fs_client():
+    """
+    Connect to Feature Store
+    """
+    discovery = h2o_discovery.discover(os.environ['H2O_CLOUD_ENVIRONMENT'])
+    client = featurestore.Client(
+        url=discovery.services['feature-store-grpc-api'].uri,
+        secure=True
+    )
+    return client
 
