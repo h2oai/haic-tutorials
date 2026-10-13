@@ -12,6 +12,7 @@ pip install h2o-engine-manager==1.10.0
 pip install h2o-mlops==1.6.4
 pip install driverlessai==2.5.0
 pip install h2o==3.46.0.11
+pip install h2ogpte==1.7.5
 ```
 
 For `3 DriverlessAI: AutoML`
@@ -51,4 +52,7 @@ Update the `h2o_ai_cloud.py` file with the connection parameters for your H2O AI
 
 * MLOps product documentation: https://docs.h2o.ai/mlops/
 * MLOps python documentation: https://docs.h2o.ai/mlops/py-client-installing/
+
+* Enterprise h2oGPTe product documentation: https://docs.h2o.ai/enterprise-h2ogpte/
+* Enterprise h2oGPTe python Client documentation: https://h2oai.github.io/h2ogpte/index.html
 
