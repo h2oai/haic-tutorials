@@ -3,6 +3,8 @@ import getpass
 
 import h2o_mlops
 import h2o_engine_manager
+import h2ogpte
+import h2o_featurestore
 
 # The URL you use to access the H2O AI Cloud's UI - do not include the `https://` - ex: internal.dedicated.h2o.ai
 H2O_CLOUD_URL = "internal.dedicated.h2o.ai"
@@ -12,6 +14,9 @@ H2O_CLOUD_URL = "internal.dedicated.h2o.ai"
 TOKEN_ENDPOINT = "https://auth.internal.dedicated.h2o.ai/auth/realms/hac/protocol/openid-connect/token"
 API_CLIENT_ID = "hac-platform-public"
 REFRESH_TOKEN_URL = "https://internal.dedicated.h2o.ai/auth/get-platform-token"
+
+# The URL of Enterprise h2oGPTe in your environment - ex: https://h2ogpte.internal.dedicated.h2o.ai
+H2OGPTE_URL = "https://h2ogpte." + H2O_CLOUD_URL
 
 
 def token_provider():
@@ -47,5 +52,15 @@ def ai_engine_client():
     """
     return h2o_engine_manager.login(
         environment="https://" + H2O_CLOUD_URL,
+        token_provider=token_provider()
+    )
+
+
+def h2ogpte_client():
+    """
+    Connect to Enterprise h2oGPTe
+    """
+    return h2ogpte.H2OGPTE(
+        address=H2OGPTE_URL,
         token_provider=token_provider()
     )
